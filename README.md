@@ -27,3 +27,6 @@ Collect info about VPN Speed and write to DB:
 Create Cronjobs:
 */10 * * * * sudo sh /home/ubuntu/check_vpn.sh
 */10 * * * * sudo sh /home/ubuntu/vpn-speedtest.sh
+
+Start VPN with:
+sudo nohup sh start-vpn.sh &
