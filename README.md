@@ -9,7 +9,7 @@ Preparement:
 Infrastructure:
 
 Host -> grab stats from DB wich VPN it should use -> connect to it via Proxy
-*needs to be updated*
+
 
 To Do:
 1. install squid and put in the config
