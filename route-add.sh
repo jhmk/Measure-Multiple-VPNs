@@ -1,3 +1,5 @@
+#EDIT: sudo route add -host *URL ot the DB Server*
+
 #!/bin/bash
  
 sudo route add default dev tunVPN
