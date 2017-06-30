@@ -1,9 +1,11 @@
+#EDIT: HOMECITY, PROXYNAME="*url of your server*", $VPNIPTEST = *your IP* & "upload to MySQL DB"
+
 #!/bin/bash
  
 # select Speedtest Server DEFINE COUNTRY OR CITY!!!
-CITY="Sydney" 
+HOMECITY="Sydney" 
  
-SLS=$(speedtest --list | grep $CITY | grep -Eo '[0-9]{1,4}' | head -1)
+SLS=$(speedtest --list | grep $HOMECITY | grep -Eo '[0-9]{1,4}' | head -1)
  
 # do speedtest and collect datasudo
  
@@ -64,7 +66,7 @@ fi
  
 # upload to MySQL DB
  
-echo "INSERT INTO vpnstatsau (RESPONSE,TIMESTAMP,DOWNLOAD,UPLOAD,VPNIP,PROXYNAME,VPNON) VALUES ('$RESPONSE','$TIMESTAMP','$DOWNLOAD','$UPLOAD','$VPNIP','$PROXYNAME','$VPNON');" | mysql -u*USER* -p*PASSWORD* *DBNAME* -h *IP*;
+echo "INSERT INTO *DBNAME* (RESPONSE,TIMESTAMP,DOWNLOAD,UPLOAD,VPNIP,PROXYNAME,VPNON) VALUES ('$RESPONSE','$TIMESTAMP','$DOWNLOAD','$UPLOAD','$VPNIP','$PROXYNAME','$VPNON');" | mysql -u*USER* -p*PASSWORD* *DBNAME* -h *IP*;
  
 # empty results
  
