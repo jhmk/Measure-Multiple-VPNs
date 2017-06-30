@@ -1,3 +1,5 @@
+#EDIT api:key-*YOURKEYID* & sandbox*ID*.mailgun.org & to=*YOUR MAIL ADDRESS*
+
 #!/bin/bash
 curl -s --user 'api:key-*YOURKEYID*' \
     https://api.mailgun.net/v3/sandbox*ID*.mailgun.org/messages \
