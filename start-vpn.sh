@@ -1,3 +1,5 @@
+# create file VPNLOGIN.pass with your VPN Provider credentials
+
 #!/bin/bash
 
 # fetch ip address and default gateway.
