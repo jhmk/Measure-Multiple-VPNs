@@ -18,6 +18,7 @@ sudo nano /etc/iproute2/rt_tables
 add "1000  vpn"
 3. install openvpn
 4. edit and run route-add.sh
+5. put ovpns & certs on the server
 
 Collect info about VPN Speed and write to DB:
 - install speedtest via pip (pip install speedtest-cli) #as root with sudo -H
@@ -25,4 +26,4 @@ Collect info about VPN Speed and write to DB:
 
 Create Cronjobs:
 */10 * * * * sudo sh /home/ubuntu/check_vpn.sh
-*/10 * * * * sh /home/ubuntu/vpn-speedtest.sh
+*/10 * * * * sudo sh /home/ubuntu/vpn-speedtest.sh
