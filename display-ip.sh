@@ -1,3 +1,5 @@
+#EDIT host *URL OF YOUR SERVER*
+
 echo "IP tunVPN via opendns"
 dig +short myip.opendns.com @resolver1.opendns.com
 echo "IP tunVPN via ident.me"
